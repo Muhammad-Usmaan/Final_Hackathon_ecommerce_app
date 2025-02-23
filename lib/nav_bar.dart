@@ -1,4 +1,3 @@
-import 'package:final_hackathon_app/Views/home_screen.dart';
 import 'package:final_hackathon_app/controllers/nav_bar_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

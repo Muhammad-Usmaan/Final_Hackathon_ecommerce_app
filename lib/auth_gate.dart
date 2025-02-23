@@ -1,4 +1,4 @@
-import 'package:final_hackathon_app/Views/on_boarding_screen.dart';
+import 'package:final_hackathon_app/Views/welcome_screen.dart';
 import 'package:final_hackathon_app/nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart'; // Import Firebase Auth (or your auth service)
@@ -20,7 +20,7 @@ class AuthGate extends StatelessWidget {
         }
 
         // If user is not logged in, return the login/signup page
-        return OnBoardingScreen(); // Replace with your login/signup page widget
+        return WelcomeView(); // Replace with your login/signup page widget
       },
     );
   }

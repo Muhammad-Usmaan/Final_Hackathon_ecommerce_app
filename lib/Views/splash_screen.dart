@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:final_hackathon_app/Views/welcome_view.dart';
+import 'package:final_hackathon_app/Views/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -21,12 +21,7 @@ class _SplashViewState extends State<SplashView> {
       const Duration(seconds: 3),
       () {
         // Navigate to home screen and remove splash screen from stack
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (context) => WelcomeView(),
-          ),
-        );
+       Navigator.push(context,MaterialPageRoute(builder: (context) => WelcomeView()));
       },
     );
   }

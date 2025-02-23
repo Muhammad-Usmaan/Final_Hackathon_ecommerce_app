@@ -1,3 +1,5 @@
+import 'package:final_hackathon_app/Views/on_boarding_screen.dart';
+import 'package:final_hackathon_app/nav_bar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -19,6 +21,7 @@ loginUser()async{
     email: LoginEmailController.text,
     password: LoginPasswordController.text
   );
+  Get.offAll(()=> NavBar());
 } on FirebaseAuthException catch (e) {
   if (e.code == 'user-not-found') {
     print('No user found for that email.');
@@ -54,6 +57,11 @@ googleLogin(){}
 // Logout
 signOut()async{
   await FirebaseAuth.instance.signOut();
+  Get.offAll(()=> OnBoardingScreen());
 }
 
+// get user email
+getUserEmail(){
+  return FirebaseAuth.instance.currentUser!.email;
+}
 }

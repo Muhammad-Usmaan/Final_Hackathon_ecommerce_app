@@ -1,4 +1,7 @@
+import 'package:final_hackathon_app/Views/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class WelcomeView extends StatelessWidget {
   const WelcomeView({super.key});
@@ -33,19 +36,45 @@ class WelcomeView extends StatelessWidget {
               child: Column(
                 spacing: 10,
                 children: [
-                  Text('Farmhouse'),
+                  Text('Farmhouse',
+                  
+                  style: GoogleFonts.poppins(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black
+                  ),),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
+                    spacing: 5,
                     children: [
-                      Text("Large"),
+                      Text("Large",
+                  
+                  style: GoogleFonts.poppins(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black
+                  ),),
                       Text('|'),
-                      Text("\$89"),
+                      Text("\$89",
+                  
+                  style: GoogleFonts.poppins(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black
+                  ),),
                     ],
                   ),
                   Container(
                     width: 200,
                     child: Text(
                         'Tomato, Mozzarella, Green basil, Olives, Bell pepper',
+                        
+                  
+                  style: GoogleFonts.poppins(
+                    fontSize: 14,
+                    
+                    color: Colors.grey
+                  ),
                         
                         textAlign: TextAlign.center,),
                   ),
@@ -63,7 +92,9 @@ class WelcomeView extends StatelessWidget {
                           50), // Match this to your button's shape
                     ),
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(()=>OnBoardingScreen());
+                      },
                       style: ElevatedButton.styleFrom(
                         foregroundColor: Colors.white,
                         backgroundColor: Colors.transparent,

@@ -9,12 +9,12 @@ class HomeScreenController extends GetxController{
       'description': 'Get 50% off on your first order!',
     },
     {
-      'image': 'assets/carousel_2.jpg',
+      'image': '../assets/images/carousel_burger_image.png',
       'title': 'Special Offer 2',
       'description': 'Buy one, get one free!',
     },
     {
-      'image': 'assets/carousel_3.jpg',
+      'image': '../assets/images/carousel_burger_image.png',
       'title': 'Special Offer 3',
       'description': 'Free delivery on orders above \$20!',
     },

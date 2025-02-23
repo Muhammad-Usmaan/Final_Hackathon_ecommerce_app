@@ -40,7 +40,9 @@ class SignupTab extends StatelessWidget {
               ],
             ),
             MyTextField(
-                controller: loginSignupController.SignupPasswordController),
+                controller: loginSignupController.SignupPasswordController,
+                obscureText: true,
+                ),
             const SizedBox(height: 20),
             // Sign Up Button
             MyButton(onPressed: () async{

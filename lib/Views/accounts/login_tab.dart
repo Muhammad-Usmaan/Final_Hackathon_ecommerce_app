@@ -33,7 +33,9 @@ class LoginTab extends StatelessWidget {
               ],
             ),
             MyTextField(
-                controller: loginSignupController.LoginPasswordController),
+                controller: loginSignupController.LoginPasswordController,
+                obscureText: true,
+                ),
             const SizedBox(height: 20),
             // Login Button
             MyButton(

@@ -16,12 +16,12 @@ class OnBoardingController extends GetxController {
           "Now eat well, don't leave the house,You can choose your favorite food only with one click",
     ),
     OnboardingContent(
-      image: 'assets/image2.png',
+      image: '../assets/images/burger_4.png',
       title: 'Second Screen',
       description: 'Description for second screen',
     ),
     OnboardingContent(
-      image: 'assets/image3.png',
+      image: '../assets/images/burger_5.png',
       title: 'Third Screen',
       description: 'Description for third screen',
     ),
