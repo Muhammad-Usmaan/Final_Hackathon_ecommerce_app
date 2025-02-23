@@ -36,10 +36,14 @@ class LoginTab extends StatelessWidget {
                 controller: loginSignupController.LoginPasswordController),
             const SizedBox(height: 20),
             // Login Button
-            MyButton(onPressed: () {}, text: 'Login'),
+            MyButton(
+                onPressed: () async {
+                  await loginSignupController.loginUser();
+                },
+                text: 'Login'),
             const SizedBox(height: 20),
             // Google Login Button
-           MyButtonGoogle()
+            MyButtonGoogle()
           ],
         ),
       );

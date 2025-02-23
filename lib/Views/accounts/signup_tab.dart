@@ -43,7 +43,9 @@ class SignupTab extends StatelessWidget {
                 controller: loginSignupController.SignupPasswordController),
             const SizedBox(height: 20),
             // Sign Up Button
-            MyButton(onPressed: () {}, text: 'Sign Up'),
+            MyButton(onPressed: () async{
+              await loginSignupController.signupUser();
+            }, text: 'Sign Up'),
             const SizedBox(height: 20),
             // Google Sign Up Button
             MyButtonGoogle()
